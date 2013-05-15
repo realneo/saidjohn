@@ -54,6 +54,7 @@ a{
 }
 #login_box input{
     padding:5px;
+    border:1px solid #fff;
 }
 #login_footer{
     position:absolute;
@@ -68,4 +69,10 @@ a{
     background-color:#fff;
     color:#6d3397;
     padding:7px;
+    cursor: pointer;
+}
+#login_box button:hover{
+    border:1px solid #fff;
+    background-color:#6d3397;
+    color:#fff;
 }

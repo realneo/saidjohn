@@ -1,17 +1,20 @@
 <?php session_start(); ?>
+<?php include('includes/db_conn.php'); ?>
 <!doctype html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8"/>
-	<title>Dashboard I Admin Panel</title>
+	<title>Dashboard | Admin Panel</title>
 	
-	<link rel="stylesheet" href="stylesheets/layout.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="stylesheets/eggplant/jquery-ui-1.10.3.custom.min.css" type="text/css"/>
+        <link rel="stylesheet" href="stylesheets/layout.css" type="text/css" media="screen" />
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" href="stylesheets/ie.css" type="text/css" media="screen" />
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<script src="javascript/jquery-1.5.2.min.js" type="text/javascript"></script>
+	<script src="javascript/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="javascript/jquery-ui-1.10.3.custom.min.js" type="text/javascript"></script>
 	<script src="javascript/hideshow.js" type="text/javascript"></script>
 	<script src="javascript/jquery.tablesorter.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="javascript/jquery.equalHeight.js"></script>
@@ -47,7 +50,26 @@
         $('.column').equalHeight();
     });
 </script>
+<script src="plugins/tinymce/tinymce.min.js"></script>
+<script>
+tinymce.init({
+    selector:'.textarea',
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks code fullscreen",
+        "insertdatetime media table contextmenu paste textcolor"
+    ],
+    theme_advanced_font_sizes: "10px,12px,13px,14px,16px,18px,20px",
+    font_size_style_values: "12px,13px,14px,16px,18px,20px",
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image forecolor backcolor fontsizeselect"
+});
+</script>
 
+<script>
+    $(function() {
+        $( "#datepicker" ).datepicker({dateFormat:"yy-mm-dd"});
+    });
+</script>
 </head>
 
 <body>

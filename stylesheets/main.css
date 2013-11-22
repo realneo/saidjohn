@@ -12,7 +12,9 @@ a{
 li{
     list-style: none;
 }
-
+img{
+    border:none;
+}
 .gradient_bg{
     background: #e8e6ed; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -39,7 +41,7 @@ li{
     top:0px;
 }
 #container{
-    width:960px;
+    width:980px;
     position:relative;
     margin: 0px auto;
     min-height: 100%;
@@ -53,10 +55,17 @@ li{
     position:absolute;
     top:20px;
     left:100px;
+    cursor: pointer;
+}
+#bio_section_pic img{
+    width:220px;
+}
+#bio_section_pic img:hover{
+    width:223px;
 }
 #bio_section_lang{
     position:absolute;
-    right:0px;
+    right:20px;
     top:20px;
 }
 #bio_section_lang th{
@@ -123,6 +132,8 @@ li{
 /* Left Pane */
 #left_pane{
     margin-top:32px;
+    float:left;
+    width:300px;
 }
 
 #left_pane th{
@@ -145,7 +156,7 @@ li{
 }
 #donate_btn{
     position:absolute;
-    right:0px;
+    right:20px;
     top:347px;
     background-color:#6d3397;
     color:#fff;
@@ -153,12 +164,28 @@ li{
     padding:20px;
     cursor:pointer;
 }
-
+#close_bio_book{
+    position:absolute;
+    right:20px;
+    top:420px;
+    background-color:#6d6767;
+    color:#fff;
+    font-weight:bold;
+    padding:20px;
+    cursor:pointer;
+    display: none;
+}
 /* Introduction */
 #intro{
-    position:absolute;
+    /*position:absolute; 
     top:399px;
-    right:-2px;
+    right:-2px;*/
+    float:left;
+    margin-top: 32px;
+    width: 663px;
+}
+#intro table{
+    width: 100%;
 }
 #intro th{
     background-color:#000;
@@ -174,7 +201,7 @@ li{
     background-color:#000;
     clear:both;
     position: relative;
-    z-index:-1;
+    z-index:1;
     height:250px;
     margin-top: 20px;
 }
@@ -191,7 +218,6 @@ li{
     right:0px;
     top:0px;
 }
-
 #footer_links th{
     color:#fff;
     text-align: left;
@@ -216,4 +242,176 @@ li{
     position: absolute;
     right:0px;
     top:200px;
+}
+
+/* Contact Page */
+#contact_form th{
+    padding:5px 10px;
+    text-align:right;
+    font-weight: lighter;
+}
+#contact_form input{
+    padding:5px;
+}
+#contact_form textarea{
+    width:300px;
+    height:200px;
+}
+#contact_form button{
+    background-color: #6d3397;
+    border:1px solid #d3d3d3;
+    padding:8px;
+    color:#fff;
+    cursor: pointer;
+}
+#contact_form button:hover{
+    color:#6d3397;
+    border:1px solid #fff;
+    background-color: #d3d3d3;
+}
+
+/* Events Page */
+.superscript{
+     vertical-align: super;
+     font-weight: lighter;
+}
+#events th{
+    font-size: 24px;
+    padding:10px;
+}
+.events_name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #6d3397;
+}
+.events_date{
+    font-weight: bold;
+    font-size:11px;
+}
+.event{
+    border:1px solid #6d3397;
+    border-radius: 5px;
+    width:200px;
+    display: inline-block;
+    padding:5px;
+    height:200px;
+}
+.event img{
+    height: 100px;
+    width: 180px;
+}
+
+.event td.date{
+    padding-top: 20px;
+}
+
+.event td.image{
+    padding-left:8px;
+    padding-right:8px;
+}
+
+.event .purple{
+    font-weight: bold;
+}
+
+/*biography*/
+
+#biography{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 38%;
+    margin-left: -190px;
+    margin-top: -100px;
+    background-color: #ffffff;
+    padding: 0px;
+    z-index: 2;
+    }
+    
+    #biography img{
+        padding:40px;
+        float:left;
+    }
+#biography-title{
+    position:absolute;
+    left:0px;
+    top:0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color:#931300;
+    width:100%;
+    padding:10px 5px;
+    color:#fff;
+    background: url('../images/top-book.gif') no-repeat;
+    height: 58px;
+    }
+
+#biography-footer{
+    position:absolute;
+    left:0px;
+    top:528px;
+    background: url('../images/bottom-book.gif') no-repeat;
+    height: 93px;
+    width:100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+    
+#biography-content{
+    position:absolute;
+    left:0px;
+    top:28px;
+    background-color:#fff;
+    width:100%;
+    color:#000;
+    background: url('../images/content-book.gif') repeat-y;
+    padding: 20px 0;
+    margin: 0px;
+    height: 500px;
+
+    }
+
+#biography-content p {
+    padding-left: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 350px;
+}
+
+#biography-content .page {
+    display: none;
+}
+
+#biography-link {
+    padding-left: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+    width: 600px;
+}
+
+#biography-link a {
+    color: #000;
+}
+    
+#overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -moz-opacity: .50;
+    z-index: 1;
+    display: none;
+}
+#bio_book{
+    display: none;
 }

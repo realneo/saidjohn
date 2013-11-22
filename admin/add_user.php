@@ -1,7 +1,7 @@
 <?php include('includes/header.php'); ?>
     <header id="header">
             <hgroup>
-                    <h1 class="site_title"><a href="index.html">Website Admin</a></h1>
+                    <h1 class="site_title"><a href="home.php">Website Admin</a></h1>
                     <h2 class="section_title">Dashboard</h2>
                     <div class="btn_view_site"><a href="../index.php">View Site</a></div>
             </hgroup>
@@ -13,9 +13,9 @@
         </div>
         <div class="breadcrumbs_container">
             <article class="breadcrumbs">
-                <a href="index.html">Website Admin</a> 
+                <a href="home.php">Website Admin</a> 
                 <div class="breadcrumb_divider"></div> 
-                <a class="current">Dashboard</a>
+                <a class="current">Add New User</a>
             </article>
         </div>
     </section><!-- end of secondary bar -->

@@ -6,34 +6,44 @@
         -->
         <h3>Content</h3>
         <ul class="toggle">
-            <li class="icn_new_article"><a href="#">New Article</a></li>
-            <li class="icn_edit_article"><a href="#">Edit Articles</a></li>
-            <li class="icn_categories"><a href="#">Categories</a></li>
-            <li class="icn_tags"><a href="#">Tags</a></li>
+            <li class="icn_new_article"><a href="intro_msg.php">Introduction Message</a></li>
+            <li class="icn_edit_article"><a href="about_page.php">About Us</a></li>
+            <li class="icn_edit_article"><a href="volunteer.php">Volunteer</a></li>
+            <li class="icn_edit_article"><a href="donate.php">Donate</a></li>
+        </ul>
+        <h3>Events</h3>
+        <ul class="toggle">
+            <li class="icn_categories"><a href="events.php">Add Event</a></li>
+            <li class="icn_edit_article"><a href="view_events.php">View Events</a></li>
         </ul>
         <h3>Users</h3>
         <ul class="toggle">
-            <li class="icn_add_user"><a href="#">Add New User</a></li>
-            <li class="icn_view_users"><a href="#">View Users</a></li>
-            <li class="icn_profile"><a href="#">Your Profile</a></li>
+            <li class="icn_add_user"><a href="add_user.php">Add New User</a></li>
+            <li class="icn_view_users"><a href="view_users.php">View Users</a></li>
         </ul>
-		<h3>Media</h3>
-		<ul class="toggle">
-			<li class="icn_folder"><a href="#">File Manager</a></li>
-			<li class="icn_photo"><a href="#">Gallery</a></li>
-			<li class="icn_audio"><a href="#">Audio</a></li>
-			<li class="icn_video"><a href="#">Video</a></li>
-		</ul>
-		<h3>Admin</h3>
-		<ul class="toggle">
-			<li class="icn_settings"><a href="#">Options</a></li>
-			<li class="icn_security"><a href="#">Security</a></li>
-			<li class="icn_jump_back"><a href="#">Logout</a></li>
-		</ul>
-		
-		<footer>
-			<hr />
-			<p><strong>Copyright &copy; 2013 Said John</strong></p>
-			<p>Developed by <a href="http://www.yoteyote.com">Yoteyote</a></p>
-		</footer>
-	</aside><!-- end of sidebar -->
+        <h3>Projects</h3>
+        <ul class="toggle">
+                <li class="icn_folder"><a href="projects.php">Add Project</a></li>
+                <li class="icn_photo"><a href="view_projects.php">View Projects</a></li>
+        </ul>
+        <h3>News</h3>
+        <ul class="toggle">
+            <li class="icn_new_article"><a href="news.php">Add News</a></li>
+            <li class="icn_edit_article"><a href="view_news.php">View News</a></li>
+        </ul>
+        <h3>Biography</h3>
+        <ul class="toggle">
+            <li class="icn_new_article"><a href="biography.php">Add Biography</a></li>
+            <li class="icn_edit_article"><a href="view_biography.php">View Biography</a></li>
+        </ul>
+        <h3>Admin</h3>
+        <ul class="toggle">
+            <li class="icn_jump_back"><a href="includes/logout_process.php">Logout</a></li>
+        </ul>
+
+        <footer>
+                <hr />
+                <p><strong>Copyright &copy; 2013 Said John</strong></p>
+                <p>Developed by <a href="http://www.yoteyote.com">Yoteyote</a></p>
+        </footer>
+</aside><!-- end of sidebar -->

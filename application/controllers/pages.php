@@ -26,6 +26,7 @@ class Pages extends CI_Controller {
         $this->load->view('templates/footer');
         
     }
+    
     public function about()
     {
         $this->base = $this->config->item('base_url');
@@ -40,4 +41,37 @@ class Pages extends CI_Controller {
         $this->load->view('about', $data);
         $this->load->view('templates/footer');
     }
+    
+    public function projects()
+    {
+        $this->base = $this->config->item('base_url');
+        $data['base'] = $this->base;
+        
+        $this->load->model('projects_model');
+        
+        $data['all_projects'] = $this->projects_model->get_all_projects();
+        
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/left_pane');
+        $this->load->view('projects', $data);
+        $this->load->view('templates/footer');
+    }
+    
+    public function project(){
+        $this->base = $this->config->item('base_url');
+        $data['base'] = $this->base;
+        
+        $this->load->model('projects_model');
+        
+        $project_id = $this->input->get('id', TRUE);
+        
+        $data['project_by_id'] = $this->projects_model->get_project_by_id($project_id);
+        
+        $this->load->view('templates/header', $data);
+        $this->load->view('templates/left_pane');
+        $this->load->view('project', $data);
+        $this->load->view('templates/footer');
+        
+    }
+    
 }

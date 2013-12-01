@@ -18,5 +18,15 @@
                 return $data;
             }
         }
+        
+        public function modify_donate($donate)
+        {
+            $data = array('donate' => $donate);
+            
+            $this->db->update('donate', $data);
+            $this->db->where('id', 1);
+            
+        }
+
 
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Admin Login</title>
+    <title><?php echo $title; ?></title>
     <!-- Bootstrap -->
     <link href="<?php echo $base; ?>/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="<?php echo $base; ?>/assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">

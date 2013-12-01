@@ -13,8 +13,8 @@
             </div>
             
             <div class="block-content collapse in">
-                <?php echo form_open('intro/modify_donate'); ?>
-                    <textarea name='intro' class='textarea span12' rows='25'>
+                <?php echo form_open('pages/modify_donate'); ?>
+                    <textarea name='donate' class='textarea span12' rows='25'>
 
                     <?php foreach ($donate_now as $donate): ?>
                         <?php echo $donate->donate; ?>

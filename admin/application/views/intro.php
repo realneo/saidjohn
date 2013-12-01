@@ -13,7 +13,7 @@
             </div>
             
             <div class="block-content collapse in">
-                <?php echo form_open('intro/modify_intro'); ?>
+                <?php echo form_open('pages/modify_intro'); ?>
                     <textarea name='intro' class='textarea span12' rows='25'>
 
                     <?php foreach ($introduction as $intro): ?>

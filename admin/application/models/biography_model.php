@@ -18,5 +18,15 @@
                 return $data;
             }
         }
+        
+        public function modify_bio($bio)
+        {
+            $data = array('content' => $bio);
+            
+            $this->db->update('biography', $data);
+            $this->db->where('id', 1);
+            
+        }
+
 
     }

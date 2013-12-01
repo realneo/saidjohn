@@ -67,11 +67,11 @@
                 </div><!-- title_bar_text -->
             </div><!-- title_bar -->
             <div id='menu_bar'>
-                <a href='index.php'>Home</a>
-                <a href='about_us.php'>About Us</a>
-                <a href='projects.php'>Our Projects</a>
-                <a href='events.php'>Our Events</a>
-                <a href='join_us.php'>Volunteer</a>
-                <a href='contact_us.php'>Contact Us</a> 
+                <a href='index'>Home</a>
+                <a href='about'>About Us</a>
+                <a href='projects'>Our Projects</a>
+                <a href='events'>Our Events</a>
+                <a href='volunteer'>Volunteer</a>
+                <a href='contact'>Contact Us</a> 
             </div><!-- menu_bar -->
-             <div id='donate_btn'><a href='donate.php'>DONATE NOW</a></div><!-- donate_btn -->
+             <div id='donate_btn'><a href='donate'>DONATE NOW</a></div><!-- donate_btn -->

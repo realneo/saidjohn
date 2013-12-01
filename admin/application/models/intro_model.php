@@ -18,5 +18,15 @@
                 return $data;
             }
         }
+        
+        
+        public function modify_intro($intro)
+        {
+            $data = array('intro' => $intro);
+            
+            $this->db->update('intro', $data);
+            $this->db->where('id', 1);
+
+        }
 
     }
